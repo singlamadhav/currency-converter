@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Croissant+One&display=swap');
+
+        body {
+            font-family: 'Segoe UI', Tahoma, 'Geneva', 'Verdana', 'sans-serif';
+
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        nav {
+    font-family: 'Croissant One', cursive;
+    font-weight: 900;
+    display: flex;
+    font-size: 20px;
+    background-color: rgb(62, 113, 216);
+    padding: 23px;
+    background-image: linear-gradient(-225deg, #5271C4 0%, #B19FFF 48%, #ECA1FE 100%);
+}
+
+nav li a {
+    text-decoration: none;
+    color: rgb(2, 3, 18);
+    transition: all;
+    transition-duration: 500ms;
+}
+
+nav li a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+div.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 23px;
+    font-size: 24px;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 23px;
+}
+
+nav ul {
+    display: flex;
+}
+.logo1 img{
+    height: 35px;
+    margin-top: 18px;
+    margin-left: 23px;
+}
+      
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+
+        form {
+            margin-top: 20px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        textarea {
+            height: 150px;
+        }
+
+        button {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo1">
+            <img src="dollar-sign-svgrepo-com.svg" alt="dollar sign">
+        </div>
+    <div class="logo">My Currency Converter</div>
+    <ul>
+        <li><a href="currency.html">Home</a></li>
+        <li><a href="Animation.html">Animation</a></li>
+        <li><a href="aboutus.html">About</a></li>
+        <li><a href="contact.html">Contact us</a></li>
+    </ul>
+</nav>
+    <div class="container">
+        <form action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Croissant+One&display=swap');
+
+ body{
+    font-family: 'Segoe UI', Tahoma, 'Geneva', 'Verdana', 'sans-serif'; 
+  /* background: -webkit-linear-gradient(to right, #155799, #159957);  
+  background: linear-gradient(to right, #155799, #159957);  */
+  color:whitesmoke;
+}
+nav {
+    font-family: 'Croissant One', cursive;
+    font-weight: 900;
+    display: flex;
+    font-size: 20px;
+    background-color: rgb(62, 113, 216);
+    padding: 23px;
+    background-image: linear-gradient(-225deg, #5271C4 0%, #B19FFF 48%, #ECA1FE 100%);
+}
+
+nav li a {
+    text-decoration: none;
+    color: black;
+    transition: all;
+    transition-duration: 500ms;
+}
+
+nav li a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+div.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 23px;
+    font-size: 24px;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 23px;
+}
+
+nav ul {
+    display: flex;
+}
+.logo1 img{
+    height: 35px;
+    margin-top: 18px;
+    margin-left: 23px;
+}
+
+h1{
+    text-align: center;
+}
+
+
+form{
+    width:35rem;
+    margin: auto;
+    color:whitesmoke;
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-image: linear-gradient(#40c9ff,#e81cff);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    padding: 20px 25px;
+}
+
+input[type=text], input[type=password]{
+    width: 100%;
+    margin: 10px 0;
+    border-radius: 5px;
+    padding: 15px 18px;
+    box-sizing: border-box;
+  }
+
+button {
+    background-color: #030804;
+    color: white;
+    padding: 14px 20px;
+    border-radius: 5px;
+    margin: 7px 0;
+    width: 100%;
+    font-size: 18px;
+  }
+
+button:hover {
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.headingsContainer{
+    text-align: center;
+}
+
+.headingsContainer p{
+    color: gray;
+}
+.mainContainer{
+    padding: 16px;
+}
+
+
+.subcontainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.subcontainer a{
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+
+span.forgotpsd a {
+    float: right;
+    color: whitesmoke;
+    padding-top: 16px;
+  }
+
+.forgotpsd a{
+    color: rgb(74, 146, 235);
+  }
+  
+.forgotpsd a:link{
+    text-decoration: none;
+  }
+
+  .register{
+    color: white;
+    text-align: center;
+  }
+  
+  .register a{
+    color: rgb(74, 146, 235);
+  }
+  
+  .register a:link{
+    text-decoration: none;
+  }
+
+  /* Media queries for the responsiveness of the page */
+  @media screen and (max-width: 600px) {
+    form{
+      width: 25rem;
+    }
+  }
+  
+  @media screen and (max-width: 400px) {
+    form{
+      width: 20rem;
+    }
+  }
+
+
+
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo1">
+            <img src="dollar-sign-svgrepo-com.svg" alt="dollar sign">
+        </div>
+    <div class="logo">My Currency Converter</div>
+    <ul>
+        <li><a href="Currency.html">Home</a></li>
+        <li><a href="Animation.html">Animation</a></li>
+        <li><a href="aboutus.html">About</a></li>
+        <li><a href="contact.html">Contact us</a></li>
+        <li><a href="home.html">Sign in</a></li>
+    </ul>
+</nav>
+    <form action="">
+        <!-- Headings for the form -->
+        <div class="headingsContainer">
+            <h3>Sign in</h3>
+            <p>Sign in with your username and password</p>
+        </div>
+
+        <!-- Main container for all inputs -->
+        <div class="mainContainer">
+            <!-- Username -->
+            <label for="username">Your username</label>
+            <input type="text" placeholder="Enter Username" name="username" required>
+
+            <br><br>
+
+            <!-- Password -->
+            <label for="pswrd">Your password</label>
+            <input type="password" placeholder="Enter Password" name="pswrd" required>
+
+            <!-- sub container for the checkbox and forgot password link -->
+            <div class="subcontainer">
+                <label>
+                  <input type="checkbox" checked="checked" name="remember"> Remember me
+                </label>
+                <p class="forgotpsd"> <a href="#">Forgot Password?</a></p>
+            </div>
+
+
+            <!-- Submit button -->
+            <button type="submit">Login</button>
+
+            <!-- Sign up link -->
+            <p class="register">Not a member?  <a href="#">Register here!</a></p>
+
+        </div>
+
+    </form>
+</body>
+</html>

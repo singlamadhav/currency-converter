@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Croissant+One&display=swap');
+body {
+    font-family: 'Segoe UI', Tahoma, 'Geneva', 'Verdana', 'sans-serif';
+    background-color: rgb(238, 244, 244);
+    margin: 0;
+    padding: 0;
+}
+nav {
+    font-family: 'Croissant One', cursive;
+    font-weight: 900;
+    display: flex;
+    font-size: 20px;
+    background-color: rgb(62, 113, 216);
+    padding: 23px;
+    background-image: linear-gradient(-225deg, #5271C4 0%, #B19FFF 48%, #ECA1FE 100%);
+}
+
+nav li a {
+    text-decoration: none;
+    color: rgb(2, 3, 18);
+    transition: all;
+    transition-duration: 500ms;
+}
+
+nav li a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 23px;
+    font-size: 24px;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 23px;
+}
+
+nav ul {
+    display: flex;
+}
+
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h1 {
+    color: #007bff;
+}
+
+.converter {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+} 
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.signup-form {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.signup-form h2 {
+    color: #007bff;
+}
+
+.signup-form .form-group {
+    margin-bottom: 20px;
+}
+
+.signup-form label {
+    font-weight: bold;
+}
+
+.signup-form input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.signup-form button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.signup-form button:hover {
+    background-color: #0056b3;
+}
+footer {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+.logo1 img{
+    height: 35px;
+    margin-top: 18px;
+    margin-left: 23px;
+}
+.dollar_logo img{
+    display: flex;
+    float: left;
+    height: 243px;
+    margin-top: 100px;
+}
+.euro_logo img{
+    display: flex;
+    float: right;
+    height: 243px;
+    width: 200px;
+    margin-top: 100px;
+}
+.footer{
+    background-color: black;
+    color: white;
+    border-left-width: 100vw;
+}
+nav .logo{
+    color: black;
+}

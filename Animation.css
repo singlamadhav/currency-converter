@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(jeremy-bishop-G9i_plbfDgk-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* nav {
+    font-family: 'Croissant One', cursive;
+    font-weight: 900;
+    display: flex;
+    font-size: 20px;
+    background-color: rgb(62, 113, 216);
+    padding: 23px;
+    background-image: linear-gradient(-225deg, #5271C4 0%, #B19FFF 48%, #ECA1FE 100%);
+}
+
+nav li a {
+    text-decoration: none;
+    color: rgb(2, 3, 18);
+    transition: all;
+    transition-duration: 500ms;
+}
+
+nav li a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+div.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 23px;
+    font-size: 24px;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 23px;
+}
+
+nav ul {
+    display: flex;
+}
+.logo1 img{
+    height: 35px;
+    margin-top: 18px;
+    margin-left: 23px;
+} */
+.box{
+    position: relative;
+    width: 200px;
+    height:300px;
+    transform-style: preserve-3d;
+    animation: animate 20s linear infinite;
+}
+@keyframes animate{
+    0%{
+        transform:perspective(1000px) rotateY(0deg);
+    }
+    100%{
+        transform: perspective(1000px) rotateY(360deg);
+    }
+}
+.box span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-origin: center;
+    transform-style: preserve-3d;
+    transform: rotateY(calc(var(--i)*45deg)) translateZ(400px);
+    -webkit-box-reflect: below 0px linear-gradient(transparent,transparent,#004);
+}
+.box span img{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
