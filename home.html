@@ -179,9 +179,43 @@ span.forgotpsd a {
         <li><a href="contact.html">Contact us</a></li>
     </ul>
     </nav>
-
+ </div>
+     <div class="container">
+        <div class="header">
+            <h1>Currency Converter</h1>
+            <p>Convert currencies with ease!</p>
         </div>
 
-    </form>
+        <div class="converter">
+            <div class="form-group">
+                <label for="amount">Amount:</label>
+                <input type="number" id="amount" placeholder="Enter amount">
+            </div>
+            <div class="form-group">
+                <label for="from">From:</label>
+                <select id="from">
+                    <option value="Choose your currency" selected disabled hidden>Choose your currency</option>
+                    <option value="usd">USD</option>
+                    <option value="eur">EUR</option>
+                    <option value="ind">IND</option>
+                    <!-- Add more currency options here -->
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="to">To:</label>
+                <select id="to">
+                    <option value="Choose your currency" selected disabled hidden>Choose your currency</option>
+                    <option value="usd">USD</option>
+                    <option value="eur">EUR</option>
+                    <option value="ind">IND</option>
+                    <!-- Add more currency options here -->
+                </select>
+            </div>
+            <button onclick="convertCurrency()">Convert</button>
+            <p id="result"></p>
+        </div>
+        <footer class="footer">
+            Copyright &copy; All rights reserved
+        </footer>
 </body>
 </html>
