@@ -152,19 +152,6 @@ footer {
     margin-top: 18px;
     margin-left: 23px;
 }
-.dollar_logo img{
-    display: flex;
-    float: left;
-    height: 243px;
-    margin-top: 100px;
-}
-.euro_logo img{
-    display: flex;
-    float: right;
-    height: 243px;
-    width: 200px;
-    margin-top: 100px;
-}
 .footer{
     background-color: black;
     color: white;
